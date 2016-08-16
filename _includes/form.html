@@ -1,0 +1,28 @@
+<section>
+
+<!-- check out formspree.io -->
+<!-- It is a free service where they will take an html form (for an email) and will process it for the artist (owner of the website) and then send it off to the specified email address (below) -->
+<!-- No PHP scripting or host the files anywhere -->
+
+<form action="https://formspree.io/{{ site.data.settings.email }}"
+      method="POST">
+	<div class="contact-info-group">
+		<label><span>Name</span>
+			<input type="text" name="name"></label>
+
+		<label><span>Email</span>
+		<!-- If the artist wants to reply to the user, this script will handle that -->
+		<input type="email" name="_replyto"></label>
+	</div>
+	
+	<label><span>Message</span>
+	<textarea name="message"></textarea></label>
+	
+	<!-- we put the submit button in a wrap so can align it to the right -->
+	<div class="submit-wrap">
+		<!-- the submit button is for the user to send their message -->
+		<input type="submit" value="Send">
+	</div>
+</form>
+
+</section>

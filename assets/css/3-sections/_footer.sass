@@ -1,0 +1,75 @@
+footer
+	width: 100%
+	overflow-x: hidden
+	height: 120px
+	// our background image!
+	//background: url(../img/adcover.png) center center
+	// this allows the image to cover the header's height(450px) and will adjust itself to fit
+	background-size: cover
+
+	// logo in the top-left
+	.logo
+		// bourbon mixin
+		float: left
+		margin: 20px 0 0 22px
+		// refer to includes/icons/adlogo.html for the path color
+		// refer to the header.html file for including it on the page
+		//path
+			fill: rgba(255,0,0,0.2)
+
+	// navigation bar on the top-right 
+	nav
+		max-width: 1000px
+		max-height: 190px
+		float: right
+		margin: 35px 20px 0 0
+
+		// home
+		a
+			display: inline-block
+			// aligns the elements vertically
+			vertical-align: middle
+			margin: 0 10px 0 0
+			text-align: center
+			color: rgba(60,60,60,1)
+			// refer to assets/css/2-base/placeholders to edit
+			@extend %small-bold
+			// for the highlight color, refer to assets/css/2-base/_base.sass
+			&:hover
+				color: rgba(128,128,128,1)
+	
+		// instagram icon
+		.ig-icon
+			display: inline-block
+			vertical-align: middle
+			margin: 4px 0 0 0
+			//position: absolute
+			// this helps with horizontal positioning
+			text-align: center
+			// this helps with vertical positioning
+			//float: none
+			color: $accent-color
+			// makes the sections into circles instead of squares
+			//margin: 10 auto
+
+			// needed for the hover animation below
+			+transition()
+
+			&:hover
+				// increases the scale of the social network icons when the cursor hovers over them
+				+transform(scale(1.2))
+
+
+
+	
+	
+		
+//@media (max-width: 501px)
+	footer
+		.lockup
+			.content-wrap
+				a
+					margin: 20px 50px 0 20px
+					//display: block
+					text-align: center
+					//padding: 0 20px 0 0

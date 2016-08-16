@@ -1,0 +1,38 @@
+# Site settings
+title: Axis
+description: Photography
+email: arthur@axis.productions
+
+
+
+# MENU
+
+# ANIMATION FOR PHOTOS
+animation: "textSlide"
+
+projects:
+- {name: img1, folder: 'img1'}
+- {name: img2, folder: 'img2'}
+- {name: img3, folder: 'img3'}
+- {name: img4, folder: 'img4'}
+- {name: img5, folder: 'img5'}
+- {name: img6, folder: 'img6'}
+- {name: img7, folder: 'img7'}
+- {name: img8, folder: 'img8'}
+- {name: img9, folder: 'img9'}
+- {name: img10, folder: 'img10'}
+- {name: img11, folder: 'img11'}
+- {name: img12, folder: 'img12'}
+- {name: img13, folder: 'img13'}
+- {name: img14, folder: 'img14'}
+- {name: img15, folder: 'img15'}
+- {name: img16, folder: 'img16'}
+- {name: img17, folder: 'img17'}
+
+# SEO
+
+# SOCIAL NETWORK ICONS/LINKS
+# refer to assets/css/5-sections/_footer.sass and _header.sass
+social:
+- {icon: 'instagram', link: ''}
+
